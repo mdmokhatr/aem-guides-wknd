@@ -1,0 +1,19 @@
+
+
+
+ <!-- <div class="card">
+    <h2 class="cmp-card_cname" >Rightpoint India </h2>
+    <img src="${properties.image}" alt="Employee Picture" class="cmp-card_eimage">
+    <h3 class="cmp-card_ename">${properties.name}</h3>
+    <h4 class="cmp-card_edesignation">${properties.designation}</h4>
+    <p class="cmp-card_econtact">Emergency Contact No : ${properties.contact} </p>
+</div>  -->
+
+ <div class="card"  data-sly-use.model="com.adobe.aem.guides.wknd.core.models.Idcard">
+    <h2 class="cmp-card_cname" >Rightpoint India </h2>
+
+    <img src="${model.image}" alt="Employee Picture" class="cmp-card_eimage">
+    <h3 class="cmp-card_ename">${model.name}</h3>
+    <h4 class="cmp-card_edesignation">${model.designation}</h4>
+    <p class="cmp-card_econtact">Emergency Contact No : ${model.contact} </p>
+</div> 

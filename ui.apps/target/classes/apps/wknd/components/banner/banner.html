@@ -1,0 +1,13 @@
+<div class="cmp-banner"
+        data-sly-use.banner="com.adobe.aem.guides.wknd.core.models.Banner"
+        data-sly-use.placeholerTemplate="core/wcm/components/commons/v1/templates.html"
+        data-sly-test.hasContrent="${!banner.empty}" >
+        <div cmp-banner_image>
+            <img src="${banner.src}" alt="${banner.alt}">
+        </div>
+    <h2 class="cmp-banner_name">${banner.bannerText}</h2>
+    Localization:
+     <h3 class="cmp-banner_title">${ 'Banner Title' @ i18n }</h3>
+
+</div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly> 

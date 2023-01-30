@@ -1,0 +1,24 @@
+<sly>
+    <div data-sly-use.model="com.adobe.aem.guides.wknd.core.models.UserData"
+        data-sly-use.templates="core/wcm/components/commons/v1/templates.html" class="cmp-userdata"
+        data-cmp-is="userdata">
+        <sly data-sly-test="${!model.isEmpty}">
+
+            <div class="cmp-formcontainer">
+                <form action="${model.Path}" method="get">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <label for="Password">Password:</label><br>
+                    <input type="password" id="password" name="password"><br>
+                    <label for="Confirm Password">Confirm Password:</label><br>
+                    <input type="password" id="confpassword" name="confpassword"><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </sly>
+    </div>
+</sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty=model.isEmpty}"></sly>

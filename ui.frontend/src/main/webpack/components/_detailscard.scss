@@ -1,0 +1,19 @@
+.cmp-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: lightgray;
+}
+.cmp-card__image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 10px;
+}
+.cmp-card__ename{
+    text-align: center;
+    color: rgb(8, 195, 8);
+}

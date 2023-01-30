@@ -1,0 +1,39 @@
+<div data-sly-use.model="com.adobe.aem.guides.wknd.core.models.HeroComponent"
+
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+
+    class="cmp-homepagehero">
+
+    <sly data-sly-test="${!model.empty}">
+
+    <img src="${properties.hbgfileReference}" class="cmp-homepagehero__image"
+
+        alt="FNL_Hero Image.png">
+
+    <div class="cmp-homepagehero__card${properties.position ? '-right' : ''}">
+
+            <div class="cmp-homepagehero__card-body" style="background-color: ${properties.color @ context='styleToken'};">
+
+                    <h1 class="cmp-homepagehero__card-title"><a href="${model.link}" class="cmp-homepagehero__card-title-link">${model.title}</a></h1>
+
+                <div class="cmp-homepagehero__card-description">${model.description @ context='html'}
+
+                </div>
+
+                <div class="cmp-homepagehero__card-button-wrapper">
+
+                  <a href="http://localhost:4502/${model.link}.html" class="cmp-homepagehero__card-button">Read More</a>
+
+                </div>
+
+            </div>
+
+    </div> 
+
+    </sly>
+
+    <sly data-sly-call="${templates.placeholder @ isEmpty = model.empty}"></sly>
+
+   
+
+  </div>

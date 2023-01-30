@@ -1,0 +1,24 @@
+<div class="card_image_over">
+    <!-- <div  data-sly-use.model="com.adobe.aem.guides.wknd.core.models.hero_abstract"> -->
+
+    <img src="${properties.background}" alt="error"
+    class="bg-image">
+    
+    <div class="mycard" style="background-color: ${properties.color @ context='styleToken'};">
+        <a href="${properties.link}">
+            <h1 class="mycard-title">
+                <span> ${properties.title} </span>
+            </h1>
+        </a>
+        <h2 class="mycard-subtitle">
+
+        </h2>
+        <p>${properties.description}</p>
+
+        <div class="mycard-footer">
+            <a href="${properties.link}" target="_blank"> Read More</a>
+        </div>
+    </div>
+
+
+</div>

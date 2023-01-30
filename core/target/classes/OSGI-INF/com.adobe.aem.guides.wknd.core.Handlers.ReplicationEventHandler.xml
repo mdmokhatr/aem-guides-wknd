@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.adobe.aem.guides.wknd.core.Handlers.ReplicationEventHandler" immediate="true">
+  <property name="event.topics" type="String" value="com/day/cq/replication"/>
+  <property name="event.filter" type="String" value="(path=/content/wknd/us/en/workflow/*)"/>
+  <service>
+    <provide interface="org.osgi.service.event.EventHandler"/>
+  </service>
+  <implementation class="com.adobe.aem.guides.wknd.core.Handlers.ReplicationEventHandler"/>
+</scr:component>

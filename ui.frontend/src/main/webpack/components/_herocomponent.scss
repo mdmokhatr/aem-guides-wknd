@@ -1,0 +1,163 @@
+.cmp-homepagehero {
+
+    position: relative;
+
+    margin-top: 10px;
+
+    &__image {
+
+        height: 440px;
+
+        width: 100%;
+
+    }
+    &__card {
+
+        width: 400px;
+
+        position: absolute;
+
+        top: 5px;
+
+        left: 50px;
+
+        bottom: 5px;
+
+        margin-top: 68px;
+
+    }
+    &__card-right{
+
+        width: 400px;
+
+        position: absolute;
+
+        top: 5px;
+
+        bottom: 5px;
+
+        margin-top: 68px;
+
+            right: 50px;
+
+        }
+        &__card-body {
+
+            background-color: yellow;
+    
+            margin-bottom: 10px;
+    
+            height: 315px;
+    
+        }
+        &__card-title {
+
+            font-size: 35px;
+    
+            font-weight: bold;
+    
+            color: black;
+    
+            text-decoration: none;
+    
+            padding-bottom: 0px;
+    
+            padding-top: -1px;
+    
+            // border-bottom: 1px solid rgb(134, 132, 132);
+    
+            line-height: 41px;
+    
+            &-link {
+    
+                text-decoration: none;
+    
+                color: black;
+    
+                border-bottom: 1.5px solid rgb(130, 130, 130);
+    
+                &::after {
+    
+                    border-color: rgb(134, 132, 132);
+    
+                    transition: all 1.5s ease-in-out border-color;
+    
+                }
+    
+                &:hover {
+    
+                    color: black;
+    
+                    border-color: rgb(1, 0, 4);
+    
+                    border-bottom: 1.6px solid black;
+    
+                    transition: all 1.5s ease-in-out border-color;
+    
+                }
+    
+            }
+    
+        }
+    
+        &__card-description {
+    
+            margin-top: 30px;
+    
+            font-size: 20px;
+    
+        }
+        &__card-button-wrapper {
+
+            color: black;
+    
+            margin-top: 20px;
+    
+        }
+    
+    
+    
+        &__card-button {
+    
+            color: black;
+    
+            display: inline-block;
+    
+            text-decoration: none;
+    
+            font-weight: bold;
+    
+            margin-top: 41px;
+    
+            border-bottom: 1px solid rgb(129, 127, 127);
+    
+        }
+        &__card-button::after {
+
+            content: '';
+    
+            display: block;
+    
+            width: 0;
+    
+            height: 1px;
+    
+            background: #000;
+    
+            color: black;
+    
+            transition: width .3s;
+    
+        }
+    
+        &__card-button:hover::after {
+    
+            width: 100%;
+    
+            color: black;
+    
+            transition: width 1.3s;
+    
+        }
+    
+    }

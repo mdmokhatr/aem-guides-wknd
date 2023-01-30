@@ -1,0 +1,25 @@
+<sly data-sly-use.model="com.adobe.aem.guides.wknd.core.models.Header"
+    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
+
+    <header>
+        <div class= "cmp-maincontainer">
+      
+          <div class="cmp-maincontainer__logo">
+            <a href="#" alt="rightpoint" > <p id="title">RIGHTPOINT </p><hr><p id="subtitle">a <b id="stitle">genpact</b> comapny</p></a>
+          </div>
+          <div class="cmp-maincontainer__navbar" data-sly-list.item="${model.category}">
+            <a  href="${item.link}">${item.text}</a>
+          </div>
+          <div class="cmp-maincontainer__right">
+                <a href="#" ><img src="https://i.pinimg.com/736x/ea/b4/70/eab4700ec044e504ef73c3a6eb6b03e6.jpg" alt="E commerece RTE"  id="web-rtc"> </a>
+                <span class="vertical-line"></span>
+                <a href="#" ><img src="https://cdn.onlinewebfonts.com/svg/img_588.png" alt="Search"  id="web-search"> </a>
+                <span class="vertical-line"></span>
+                <a href="#" ><img src="https://cdn3.iconfinder.com/data/icons/flat-and-simple-vol-3/512/9_List_menu-512.png" alt="Menu"  id="menu"> </a>
+                
+                
+          </div>
+      </div>
+      </header>
+
+</sly>

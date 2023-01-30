@@ -1,0 +1,84 @@
+.cmp-maincontainer {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+
+    &__logo {
+        width: 20%;
+        background-color: #ffffff;
+    }
+
+    .cmp-maincontainer__navbar {
+        width: 40%;
+        background-color:white;
+        margin-top: -5px;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        list-style: none;
+        float: left;
+        .ul a:active,a:visited,a:link{
+            text-decoration: none;
+            
+        }
+
+       a:hover{
+        text-decoration: none;
+        color: black;
+       }
+    }
+    ul{
+        
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-left: 40px;
+        
+
+    }
+    a{
+        padding-left: 40px;
+        color:gray;
+        margin-top: 10%;
+    }
+   
+
+
+&__right {
+    width: 10%;
+    background-color: #ffffff;
+   a{
+        border: solid 2px black;
+        background-color: black;
+        color: grey;
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        font-weight: 300;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    a:active,a:hover{
+        text-decoration: none;
+        color:white;
+    }
+}
+#logo-genpact{
+    margin-left: 50px;
+}
+.logo-rightpoint{
+    padding-top: 5px;
+}
+.image-container{
+    width: 45%;
+}
+.browsericon{
+    width: 28%;
+}
+
+}
